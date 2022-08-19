@@ -6,13 +6,15 @@
 
 ## Description
 
-야놀자를 보며 클론 코딩.
+### 야놀자를 보며 클론 코딩
+
+1. 회원가입 페이지 구현
 
 ## Running the app
 
 ```bash
 # development
-yarn start:dev
+$ yarn start:dev
 ```
 
 ## Test

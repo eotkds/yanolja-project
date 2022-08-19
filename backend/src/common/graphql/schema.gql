@@ -1,0 +1,26 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type User {
+  id: String!
+  name: String!
+  phone: String!
+  email: String!
+  creationDate: DateTime!
+  updatedOn: DateTime!
+  deletionDate: DateTime!
+}
+
+"""
+A date-time string at UTC, such as 2019-12-03T09:54:33Z, compliant with the date-time format.
+"""
+scalar DateTime
+
+type Query {
+  fetchAllUser: [User!]!
+}
+
+type Mutation {
+  create(name: String!, phone: String!, email: String!): User!
+}

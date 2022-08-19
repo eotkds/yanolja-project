@@ -1,5 +1,5 @@
 /*
-220815 수정
+220819 수정
 */
 import { ApolloDriver, ApolloDriverConfig } from '@nestjs/apollo';
 import { Module } from '@nestjs/common';
@@ -21,7 +21,7 @@ import { AppService } from './app.service';
       host: 'my_database',
       port: 3306,
       username: 'root',
-      password: 'root',
+      password: process.env.SQL_PASSWORD,
       database: 'myproject',
       autoLoadModels: true,
       synchronize: true,
