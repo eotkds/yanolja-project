@@ -1,7 +1,6 @@
-/*
-220816 수정
-*/
-
+/**
+ * 220825 update
+ */
 import { Module } from '@nestjs/common';
 import { SequelizeModule } from '@nestjs/sequelize';
 import { User } from './models/user.entity';

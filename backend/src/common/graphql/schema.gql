@@ -18,9 +18,18 @@ A date-time string at UTC, such as 2019-12-03T09:54:33Z, compliant with the date
 scalar DateTime
 
 type Query {
-  fetchAllUser: [User!]!
+  fetchAllUsers: [User!]!
+  fetchUser(id: String!): User!
 }
 
 type Mutation {
   create(name: String!, phone: String!, email: String!): User!
+  updateUser(id: String!, updateuserInput: UpdateUserInput!): User!
+  deleteUser(id: String!): Boolean!
+}
+
+input UpdateUserInput {
+  name: String
+  phone: String
+  email: String
 }
