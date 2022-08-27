@@ -9,8 +9,8 @@ export class UserService {
     private userModel: typeof User,
   ) {}
 
-  async create({ name, phone, email }) {
-    return await this.userModel.create({ name, phone, email });
+  async create({ name, phone, email, password }) {
+    return await this.userModel.create({ name, phone, email, password });
   }
 
   async findAll() {

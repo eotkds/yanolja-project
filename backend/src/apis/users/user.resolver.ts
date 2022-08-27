@@ -14,8 +14,9 @@ export class UserResolver {
     @Args('name') name: string,
     @Args('phone') phone: string,
     @Args('email') email: string,
+    @Args('password') password: string,
   ) {
-    return this.userService.create({ name, phone, email });
+    return this.userService.create({ name, phone, email, password });
   }
 
   //user 전체 조회

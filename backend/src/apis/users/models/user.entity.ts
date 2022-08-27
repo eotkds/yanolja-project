@@ -35,6 +35,9 @@ export class User extends Model<User> {
   @Field(() => String)
   email: string;
 
+  @Column
+  password: string;
+
   @CreatedAt
   @Field(() => Date)
   creationDate: Date;
